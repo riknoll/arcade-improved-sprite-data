@@ -1,14 +1,18 @@
 {
-    "name": "my-project",
+    "name": "arcade-improved-sprite-data",
     "version": "0.0.0",
     "files": [
-        "main.ts"
+        "main.ts",
+        "getSet.ts",
+        "spriteData.ts",
+        "api.ts"
     ],
     "supportedTargets": [
         "arcade"
     ],
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "arcade-extension-utils": "github:riknoll/arcade-extension-utils#v0.0.1"
     },
     "testDependencies": {}
 }
