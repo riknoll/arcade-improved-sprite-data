@@ -1,3 +1,4 @@
+//% color="#4B7BEC"
 namespace spriteData {
     //% blockId=improved_sprite_data_set_function
     //% block="$target define function $key with $sprite"
@@ -9,7 +10,7 @@ namespace spriteData {
     //% group="Sprite Functions"
     //% weight=100
     //% blockGap=8
-    export function setFunction(target: Sprite, key: string, value: (target: Sprite) => void) {
+    export function setFunction(target: Sprite, key: string, value: (sprite: Sprite) => void) {
         setCore(target, key, value, "function");
     }
 
@@ -21,7 +22,7 @@ namespace spriteData {
     //% group="Sprite Functions"
     //% weight=90
     export function callFunction(target: Sprite, key: string) {
-        const func = getCore(target, key, "function") as ((target: Sprite) => void);
+        const func = getCore(target, key, "function") as ((sprite: Sprite) => void);
         if (func) {
             func(target);
         }
